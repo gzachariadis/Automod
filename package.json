@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "countdown": "^2.6.0",
+    "dank-twitch-irc": "^4.1.0",
+    "is-stream": "^2.0.0",
+    "moment": "^2.29.0",
+    "moment-timezone": "^0.5.31",
+    "moments": "0.0.2",
+    "package.json": "^2.0.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "spotify-web-api-node": "^4.0.0",
+    "tmi.js": "^1.5.0"
+  },
+  "now": {
+    "name": "yagoTW_bot",
+    "alias": "app1",
+    "type": "npm",
+    "engines": {
+      "node": "4.7.2"
+    },
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": "3001"
+    }
+  }
+}
