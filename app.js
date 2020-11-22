@@ -9,18 +9,16 @@ const client = new tmi.Client({
         secure: true
     },
     identity: {
-        username: '',
-        password: 'oauth:'
+        username: 'tirkouaz_kota',
+        password: 'oauth:1312312'
     },
-	channels: ['']
+	channels: ['tirkouaz_kota']
 });
 
 client.connect();
 
-// Nword - Ελληνικα - Αγγλικα
 var nigga_se_protasi = new RegExp('(n|v|ν)+([.#($@!* %]*){0,}(i|η|υ|ύ|ή|ι|ί!|@)+([.#($@!* %]*){0,}(g|γ)+([.#($@!* %]*){0,}(g|γ)+([.#($@!* %]*){0,}(α|ά|a|@|1|α)+[ ]*','gmi');
-var nigker_nigka = new RegExp('(n|ν|v)+([b-df-hj-np-tv-z\s1_]*)(i|1|ι|ί|!|@)+([b-df-hj-np-tv-z\s1_νκnk]*)(γ|g)+([b-df-hj-np-tv-z\s1_]*)(g|γ|κ|k)+[\s]{0,}(?=.)ε?έ?ε?ρ?e?r?P?ρ?R?A?a?ά?α?Α?\s*','gmi');
-var nigger_me_kena_excel = new RegExp('\b(?!((ZULUL|TriPeek|TriHard|cmonBruh|KevinTurtle) ?){5})(n|ZULUL|TriPeek|TriHard|cmonBruh|KevinTurtle) ?(i|TriHard|ZULUL|TriPeek|cmonBruh|KevinTurtle) ?(g|TriHard|ZULUL|TriPeek|cmonBruh|KevinTurtle) ?(g|TriHard|ZULUL|TriPeek|cmonBruh|KevinTurtle) ?(e|TriHard|ZULUL|TriPeek|cmonBruh|KevinTurtle) ?(r|TriHard|ZULUL|TriPeek|cmonBruh|KevinTurtle)s?\b','gmi');
+var nigker_nigka = new RegExp('(n|ν|v)+([#@!$%^&*1_]*)(i|1|ι|ί|!|@)+([#@!$%^&*1_]*)(γ|g)+([#@!$%^&*1_]*)(g|γ|κ|k)+[ ]{0,}(?=.)ε?έ?ε?ρ?e?r?P?ρ?R?A?a?ά?α?Α?','gmi');
 var negro_negroi_simple = new RegExp('(n|ν)+(?:[\s]*)(3|e|έ|ε|1)+(?:[\s]*)(g|γ)+([b-df-hj-np-tv-z\s1_ ]*)(r|p|ρ)+([ b-df-hj-np-tv-z\s1_]*)(0|o|ό|ο|w|ω|ώ)+[ 1_iίι]*\s*','gmi');
 var nigker_basic_with_spaces = new RegExp('(n|ν)+(?:[\s]*)(l|4|h|η|ή|i|1|ι|ί|!|@)+(?:[\s]*)(g|γ|b|β)+(?:[\s]*)[kκ]*(?:[\s]*)(3|e|ε|έ)+(?:[\s]*)(r|ρ)+\s*','gmi');
 
@@ -36,65 +34,116 @@ var xontre_sketo = new RegExp('^([ ]*)(x|χ)+(ο|ό|ω|ώ|w|0|o)+([ ]*)(n|ν)+([
 var hontre_sketo = new RegExp('^([ ]*)(h)+(ο|ό|ω|ώ|w|0|o)+([ ]*)([t|τ ]*)(n|ν)+([ ]*)(t|τ)+([ ]*)(ρ|r)+([ ]*)(ε|έ|3|e)+([ ]*)$','gmi');
 var ntrouli_sketo = new RegExp('^([ ]*)(n|ν)+([ ]*)(t|τ)+([ ]*)(r|ρ)+([ ]*)(ο|ό|ω|ώ|w|0|o)+([ ]*)(y|υ|ύ|u)+([ ]*)(l|λ)+([ ]*)(i|h|ή|η|ι|ί|1|υ|ύ|y|u)+([ ]*)$','gmi');
 
-var pun1sher_paragogaxontrou_meioneipe = new RegExp('^(?!(?:.*(?:(e|ε|έ)+(ί|ι|i|1)(π|p|P)+(έ|ε|3|e)).*))(?:.*(?:((π|p)+([\s]*)(y|u|υ|ύ|ι|ί|1|i)+([\s]*)(v|ν|n)+([\s]*)(i|ί|ι|i|1)+([\s]*)(?!s.*)|(p|π)+([\s]*)(ά|α|a|ύ|υ|y|u|i|ί|ι|1)+([\s]*)(ν|n|v)+([\s]*)(ύ|υ|y|u|i|ί|ι|1)+([\s]*)(s|ς|σ)+([\s]*)(h|ε|έ|e)+([\s]*)(ρ|r|p|P)+([\s]*))))(?:.*(?:((x|χ)+([\s]*)(ο|ό|o|w|ώ|ω)+([\s]*)(ν|n|v)+([\s]*)(t|τ)+([\s]*)(ρ|r|p)+([\s]*)(έ|ε|e|3|o|ό|ο|w|ώ|ω)+([\s]*)[ς|σ|s ]{0,}).*))$','gmi');
+var pun1sher_paragogaxontrou_meioneipe = new RegExp('^(?!(?:.*(?:(e|ε|έ)+([ ]*)(ί|ι|i|1)+([ ]*)(π|p|P)+([ ]*)(΄ε|ε΄|έ|ε|3|e)+([ ]*).*|(λ|l)+([ ]*)(e|ε|έ|΄ε|ε΄|3)+([ ]*)(3|έ|e|ε|΄ε|ε΄)+([ ]*)(ι΄|΄ι|1|ί|ι|i)+([ ]*).*)))(?:.*(?:((π|p)+([\s]*)(y|u|υ|ύ|ι|ί|1|i)+([\s]*)(v|ν|n)+([\s]*)(i|ί|ι|i|1)+([\s]*)(?!s.*)|(p|π)+([\s]*)(ά|α|a|ύ|υ|y|u|i|ί|ι|1)+([\s]*)(ν|n|v)+([\s]*)(ύ|υ|y|u|i|ί|ι|1)+([\s]*)(s|ς|σ)+([\s]*)(h|ε|έ|e)+([\s]*)(ρ|r|p|P)+([\s]*))))(?:.*(?:((x|χ)+([\s]*)(ο|ό|o|w|ώ|ω)+([\s]*)(ν|n|v)+([\s]*)(t|τ)+([\s]*)(ρ|r|p)+([\s]*)(έ|ε|e|3|o|ό|ο|w|ώ|ω)+([\s]*)[ς|σ|s ]{0,}).*))$','gmi');
 
-
+// Nigka 
 client.on('message', (channel, tags, message, self) => {
 	if(self) return;
 	
 	message = message.replace(regexes.tagss, '').trim()
 
-	if (nigga_se_protasi.test(message)) {
-		console.log(`nigga_se_protasi was trigged by ${tags.username} for message ${message.trim()}`);
+	if (nigga_se_protasi.test(message) || nigker_nigka.test(message) || negro_negroi_simple.test(message) || nigker_basic_with_spaces.test(message)) {
+		console.log(`nigga katigoria was trigged by ${tags.username} for message ${message.trim()}`);
 		client.say(channel, "/delete " + tags.id);
 	}
 });
 
-client.on('message', (channel, tags, message, self) => {
-	if(self) return;
-	
-	message = message.replace(regexes.tagss, '').trim();
-	
-	if (nigker_nigka.test(message)) {
-		console.log(`nigker_nigka was trigged by ${tags.username} for message ${message.trim()}`);
-		client.say(channel, "/delete " + tags.id);
-	}
-});
-
-// Arapis kai paragoga
+// GTXS
 client.on('message', (channel, tags, message, self) => {
 	if(self) return;
 	
 	message = message.replace(regexes.tagss, '').trim();
 
-	if (nigger_me_kena_excel.test(message)) {
-		console.log(`negro_negroi_simple was trigged by ${tags.username} for message ${message.trim()}`);
-		client.say(channel, "/delete " + tags.id);
-	}
-});
-
-
-// Excel 
-client.on('message', (channel, tags, message, self) => {
-	if(self) return;
-	
-	message = message.replace(regexes.tagss, '').trim();
-
-	if(negro_negroi_simple.test(message)){
-		console.log(`negro_negroi_simple was trigged by ${tags.username} for message ${message.trim()}`);
-		client.say(channel, "/delete " + tags.id);
-	}
-});
-
-// Nigga kai paragoga
-client.on('message', (channel, tags, message, self) => {
-	if(self) return;
-	
-	message = message.replace(regexes.tagss, '').trim();
-
-	if(nigker_basic_with_spaces.test(message)) {
-		console.log(`negro_negroi_simple was trigged by ${tags.username} for message ${message.trim()}`);
+	if(gtxs.test(message)) {
+		console.log(`gtxs was trigged by ${tags.username} for message ${message.trim()}`);
 		client.say(channel, "/delete " + tags.id);
 	}
  });
 
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if(pun1sher_xontre.test(message)) {
+		console.log(`pun1sher_xontre was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}
+ });
+
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if(pun1sher_hontre.test(message)) {
+		console.log(`pun1sher_hotre was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}
+ });
+
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if(pun1sher_ntrouli.test(message)) {
+		console.log(`pun1sher_ntrouli was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}
+ });
+
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if(pun1sher_hotdre.test(message)) {
+		console.log(`pun1sher_hotdre was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}
+ });
+
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if(hotdre_sketo.test(message)) {
+		console.log(`hotdre_sketo was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}
+ });
+
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if(xontre_sketo.test(message)) {
+		console.log(`xontre_sketo was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}
+ });
+
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if(hontre_sketo.test(message) || ntrouli_sketo.test(message)) {
+		console.log(`hotre_sketo or ntrouli_sketo was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}
+ });
+
+ client.on('message', (channel, tags, message, self) => {
+	if(self) return;
+	
+	message = message.replace(regexes.tagss, '').trim();
+
+	if( pun1sher_paragogaxontrou_meioneipe.test(message)) {
+		console.log(`pun1sher_paragogaxontrou_meioneipeorleei was trigged by ${tags.username} for message ${message.trim()}`);
+		client.say(channel, "/delete " + tags.id);
+	}s
+ });
